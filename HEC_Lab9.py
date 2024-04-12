@@ -1,3 +1,4 @@
+str_pw = ''
 
 
 def menu():
@@ -16,7 +17,7 @@ def main():
 
 def encode():
     encoded_pw = []
-    str_pw = ''
+    global str_pw
     password = str(input("Please enter your password to encode: "))
     print("Your password has been encoded and stored!\n")
     for i in password:
@@ -30,6 +31,7 @@ def encode():
                 encoded_pw.append(2)
     for j in encoded_pw:
         str_pw += str(j)
+    return str_pw
 
 
 if __name__ == '__main__':
