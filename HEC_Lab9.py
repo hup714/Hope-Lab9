@@ -33,6 +33,14 @@ def encode():
         str_pw += str(j)
     return str_pw
 
+#Kexin Zhou
+def decode(encoded_password):
+    decoded_password = ""
+    for digit in encoded_password:
+        decoded_digit = (int(digit) - 3) % 10
+        decoded_password += str(decoded_digit)
+    return decoded_password
+
 
 if __name__ == '__main__':
     while True:
