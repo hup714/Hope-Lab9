@@ -14,7 +14,6 @@ def main():
     elif option == 3:
         exit()
 
-
 def encode():
     encoded_pw = []
     global str_pw
